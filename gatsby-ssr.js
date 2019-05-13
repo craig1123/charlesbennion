@@ -1,7 +1,4 @@
-/**
- * Implement Gatsby's SSR (Server Side Rendering) APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/ssr-apis/
- */
-
-// You can delete this file if you're not using it
+// import onRenderBodyAnalytics from './src/state/onRenderBodyAnalytics';
+//
+// // adds scripts to the body and head (google analytics)
+// export const onRenderBody = onRenderBodyAnalytics;
