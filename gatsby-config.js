@@ -3,6 +3,7 @@ module.exports = {
     title: `Gatsby Default Starter`,
     description: `Charles Bennion, a composer artist from Las Vegas. Charles Bennion's songs all have some story, emotion, or imagery that enhance the composing process`,
     language: 'en',
+    author: '@craigwalker1123',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
