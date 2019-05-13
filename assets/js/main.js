@@ -24,6 +24,16 @@
 			xxsmall:  [ null,      '360px'  ]
 		});
 
+		var year = new Date().getFullYear();
+		$('#copyright-year').text(year);
+
+		$('#contact-submit').on('submit', function(e) {
+			e.preventDefault();
+			var values = $(this).serializeArray();
+			window.location = 'mailto:Charles.bennion@gmail.com?subject=Piano - ' + values[0].value + '&body=' + values[1].value;
+		})
+
+
 	// Play initial animations on page load.
 		$window.on('load', function() {
 			window.setTimeout(function() {
