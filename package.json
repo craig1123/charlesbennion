@@ -15,7 +15,7 @@
   "engineStrict": true,
   "scripts": {
     "build": "rollup -c",
-    "deploy": "deploy": "now --target production",
+    "deploy": "now && now alias",
     "start": "open -a 'Google Chrome' http://localhost:4040/ && node ./server",
     "watch": "rollup -c -w"
   },
