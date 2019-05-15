@@ -2,7 +2,4 @@
   "version": 2,
   "name": "Charles Bennion",
   "alias": "https://charles-bennion.now.sh/",
-  "builds": [
-    { "src": "public/index.html", "use": "@now/html-minifier" }
-  ]
 }
