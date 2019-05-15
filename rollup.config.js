@@ -1,9 +1,7 @@
 import resolve from 'rollup-plugin-node-resolve';
 import commonjs from 'rollup-plugin-commonjs';
 import { terser } from 'rollup-plugin-terser';
-import postcss from 'rollup-plugin-postcss';
-
-import cssnano from 'cssnano';
+import scss from 'rollup-plugin-scss';
 
 const production = !process.env.ROLLUP_WATCH;
 
@@ -16,12 +14,7 @@ export default {
   },
   treeshake: !!production,
   plugins: [
-    postcss({
-      extensions: [ '.css' ],
-      plugins: [
-        cssnano(),
-      ],
-    }),
+    scss(),
     resolve(), // resolve bare import specifiers
     commonjs(), // converts date-fns to ES modules
     production && terser(), // minify, but only in production

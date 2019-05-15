@@ -24,10 +24,7 @@
 		$('#contact-submit').on('submit', function(e) {
 			e.preventDefault();
 			var values = $(this).serializeArray();
-			var name = values[0];
-			var email = values[1];
-			var body = values[2];
-			// window.location = 'mailto:Charles.bennion@gmail.com?subject=Piano - ' + values[0].value + '&body=' + values[1].value;
+			window.location = 'mailto:Charles.bennion@gmail.com?subject=Piano - ' + values[0].value + '&body=' + values[1].value;
 		})
 
 
